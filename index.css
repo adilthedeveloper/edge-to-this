@@ -1,0 +1,348 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+ 
+ body {
+     background-color: #1a1a1a;
+     color: #fff;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+ 
+ /* Navigation Bar */
+ header {
+     position: sticky;
+     top: 0;
+     background-color: #1a1a1a;
+     z-index: 1000;
+     padding: 20px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+ 
+ .logo a {
+     font-size: 24px;
+     /* font-weight: bold; */
+     color: #fff;
+     padding: 30px;
+     padding-left: 20px;
+ }
+ 
+ .logo a span {
+     color: #e63946;
+     font-weight: 300;
+ }
+ 
+ .nav-links {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+ }
+ 
+ .nav-links li a {
+     font-size: 16px;
+     color: #fff;
+     transition: color 0.3s;
+     padding-left: 20px;
+
+ }
+ 
+ .nav-links li a:hover {
+     color: #e63946;
+ }
+ 
+ /* Hero Section */
+.hero {
+     height: 100vh;
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     text-align: left;
+     margin-left: 100px;
+ }
+ 
+ .hero-content h1 {
+     font-size: 96px;
+     font-weight: 600;
+     line-height: 1.2;
+     padding-bottom: 30px;
+     padding-left: 30px;
+     font-family: "Poppins", sans-serif;
+ }
+ 
+ .hero-content .highlight {
+     color: #e63946;
+ }
+
+ 
+ .cta-button {
+     margin-top: 20px;
+     margin-left: 30px;
+     display: inline-block;
+     padding: 20px 30px;
+     background-color: white;
+     color: rgb(21, 20, 20);
+     font-weight: bold;
+     border-radius: 10px;
+     transition: background-color 0.3s;
+ }
+ 
+ .cta-button:hover {
+     background-color: #d62828;
+     color: white;
+ }
+
+ /* Full-Width Image Section */
+.full-width-image {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image covers the section without distortion */
+}
+.services {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for small screens */
+    gap: 2rem;
+    padding: 8rem;
+    background-color: white; /* Light background */
+}
+
+.service {
+    text-align: left;
+    color: rgb(21, 20, 20);
+    padding: 40px;
+}
+
+.service h2 {
+    font-size: 70px;
+    color: #e63b2e; /* Red for the headings */
+    margin-bottom: 1rem;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.service p {
+    font-size: 1.2rem;
+    color: rgb(21, 20, 20);
+    line-height: 1.6;
+    font-family: "Inter", sans-serif;
+    
+}
+
+
+.partners-section {
+    background-color: white; /* Set the background color */
+    padding: 50px 20px;
+    text-align: center;
+    color: rgb(21, 20, 20);
+  }
+  
+  .partners-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 85px;
+  }
+  
+  .partners-section .subtitle {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: rgb(21, 20, 20);
+  }
+  
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between logos */
+    flex-wrap: wrap;
+  }
+  
+  .partner-logo {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .join-family {
+    /* margin-top: 30px; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .logos-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .partner-logo {
+      max-width: 120px;
+    }
+  }
+  
+  .cta-button2 {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(21, 20, 20);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-button2:hover {
+    background-color: red; /* red hover effect */
+    color: #fff;
+  }
+  
+@media (min-width: 768px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+        grid-template-rows: auto auto; /* Two rows for a total of 4 items */
+    }
+}
+
+.next-partner-section {
+    padding: 80px 20px; /* Increased padding for more breathing room */
+    background-color: white;
+    text-align: left;
+    color: rgb(21, 20, 20);
+    font-family: "Poppins", sans-serif; /* Ensuring the same font family */
+}
+
+.next-partner-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.next-partner-section h1 {
+    font-size: 85px; /* Adjusted font size to match the image */
+    font-weight: 700;
+    color: rgb(21, 20, 20);
+    line-height: 1.2; /* Tighter line spacing */
+    margin-bottom: 20px; /* Space between heading and next paragraph */
+}
+
+.next-partner-section h1 .highlight {
+    color: rgb(21, 20, 20);
+    font-weight: bold;
+}
+
+.next-partner-section p {
+    font-size: 20px; /* Matching body text font size */
+    line-height: 1.6;
+    color: rgb(21, 20, 20);
+    margin: 40px 0; /* Slightly reduced margins to align text */
+    font-family: "Inter", sans-serif;
+}
+
+.next-partner-section p .highlight {
+    color: #e63b2e; /* Red highlight for specific text */
+    font-weight: bold; /* Emphasis for the highlighted text */
+    font-size: 25px;
+}
+
+.next-partner-section h2 {
+    font-size: 28px; /* Smaller subheading font size */
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(21, 20, 20);
+    line-height: 1.4; /* Tighter line spacing for subheading */
+}
+
+.next-partner-section h2 .highlight-red {
+    color: #e63b2e;
+    font-weight: bold; /* Bold emphasis for 'pay as you go!' */
+    font-size: 50px;
+}
+
+.next-partner-section p:last-of-type {
+    margin-bottom: 40px; /* Extra spacing at the bottom for visual balance */
+}
+
+
+.how-it-works-section {
+    background-color: white; 
+    padding: 30px 20px; /* Similar padding to keep sections consistent */
+    text-align: center; /* Center the heading and video */
+}
+
+
+.video-container {
+    max-width: 900px; /* Limit the width of the video */
+    margin: 0 auto; /* Center the video */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto; /* Make sure the video scales properly */
+    margin-top: 20px;
+}
+
+.cta-button3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.cta-button3:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .how-it-works-section h2 {
+        font-size: 28px;
+    }
+    
+    .video-container {
+        max-width: 100%; /* Video takes up more space on smaller screens */
+    }
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .next-partner-section h1 {
+        font-size: 48px; /* Adjusted font size for smaller screens */
+    }
+    
+    .next-partner-section p {
+        font-size: 18px; /* Slightly smaller text for readability */
+
+    }
+    
+    .next-partner-section h2 {
+        font-size: 24px;
+    }
+}
